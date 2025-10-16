@@ -1,0 +1,65 @@
+body {
+transition: background-color 0.3s, color 0.3s;
+}
+body.light-mode {
+background-color: #f8f9fa;
+color: #212529;
+}
+body.dark-mode {
+background-color: #121212;
+color: #f1f1f1;
+}
+.navbar {
+transition: background-color 0.3s;
+}
+body.light-mode .navbar {
+background-color: #ffffff;
+}
+body.dark-mode .navbar {
+background-color: #1e1e1e;
+}
+.card {
+background-color: #ffffff;
+border-radius: 8px;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+transition: transform 0.2s ease-in-out, opacity 0.3s;
+}
+body.dark-mode .card {
+background-color: #1e1e1e;
+color: #f1f1f1;
+}
+.card:hover {
+transform: translateY(-5px);
+}
+.completed-task {
+border-left: 5px solid #28a745 !important;
+opacity: 0.85;
+}
+.badge-complete {
+background-color: #198754;
+color: #fff;
+}
+.badge-pending {
+background-color: #fd7e14;
+color: #fff;
+}
+.btn {
+transition: background-color 0.2s, color 0.2s;
+}
+.btn:hover {
+filter: brightness(0.9);
+}
+input,
+button {
+border-radius: 6px !important;
+}
+.modal-content {
+border-radius: 10px;
+}
+@keyframes fadeIn {
+from { opacity: 0; transform: scale(0.95); }
+to   { opacity: 1; transform: scale(1); }
+}
+.task-animated {
+animation: fadeIn 0.3s ease-in-out;
+}
